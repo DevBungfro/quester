@@ -5,15 +5,16 @@ local logger = {}
 
 function logger.error(options: Types.ErrorOptions)
     local message = Messages[options.id]
+    local fMessage = ""
 
     if (message == nil) then
         message = "Error: Unknown"
     end
 
-    message:gsub("Foo", options.foo)
-    message:gsub("Bar", options.bar)
+    fMessage = message:gsub("Foo", options.foo)
+    fMessage = fMessage:gsub("Bar", options.bar)
 
-    print(message)
+    print(fMessage)
 end
 
 return logger
