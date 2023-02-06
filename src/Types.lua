@@ -6,3 +6,11 @@ export type NewQuest = {
         part: string?;
     }?
 }
+
+export type ErrorOptions  = {
+    id: string;
+    foo: string?;
+    bar: string?;
+}
+
+return nil
