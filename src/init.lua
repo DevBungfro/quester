@@ -2,7 +2,7 @@
 local Types = require(script.Types)
 
 type Quester = {
-	Types: {
+	Type: {
 		Touch: Types.Type,
 		Timer: Types.Type,
 		Stat: Types.Type
