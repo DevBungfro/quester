@@ -1,10 +1,12 @@
+export type Type = "0"|"1"|"2"
+export type Time = "0"|"1"
+
 export type NewQuest = {
-    type: string;
-    name: string;
-    forcestart: string?;
-    options: {
-        part: string?;
-    }?
+    Player: Player;
+    Type: Type;
+    Name: string;
+    ForceStart: string?;
+    Options: any?;
 }
 
 export type ErrorOptions  = {

@@ -2,7 +2,16 @@
 local Types = require(script.Types)
 
 type Quester = {
-    new: (options: Types.NewQuest) -> nil
+	Types: {
+		Touch: Types.Type,
+		Timer: Types.Type,
+		Stat: Types.Type
+	};
+	Time: {
+		Minutes: Types.Time,
+		Seconds: Types.Time
+	};
+    new: (options: Types.NewQuest) -> nil;
 }
 
 local function LockTable(table)
@@ -21,5 +30,14 @@ end
 
 
 return LockTable({
-    new = require(script.Main.new)
+    new = require(script.Main.new);
+	Type = {
+		Touch = "0",
+		Timer = "1",
+		Stat = "2",
+	};
+	Time = {
+		Minutes = "0";
+		Seconds = "1";
+	};
 }) :: Quester
