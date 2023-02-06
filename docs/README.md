@@ -1,6 +1,6 @@
 ---
 label: Getting Started
-icon: rocket
+icon: info
 ---
 
 Welcome to the home of the Quester documentation! Here you will learn all about it and how to use it.
