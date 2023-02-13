@@ -1,6 +1,10 @@
 {
-    "name": "Quester",
-    "tree": {
+  "name": "Documentor",
+  "tree": {
+    "$className": "DataModel",
+    "ReplicatedStorage": {
+      "$className": "ReplicatedStorage",
       "$path": "src"
     }
   }
+}
